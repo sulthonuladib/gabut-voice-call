@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>voiceapp</title>
+  </head>
+  <body>
+    <h1>voiceapp</h1>
+    <p>an app that i build when i was GABUT</p>
+    <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+    <div>click generate and send destination id to your friend</div>
+    <div>
+      <input type="button" onclick="generate()" value="generate id"></input>
+      <p id="peerid"></p>
+    </div>
+    <div>insert your friends destination id and press call</div>
+    <div>
+      <input type="text" id="destinationid" placeholder="destination id"></input>
+      <input type="button" onclick="call()" value="call"></input>
+    </div>
+    <audio controls></audio>
+
+    <script src="js/scripts.js"></script>
+    <footer>&copy; Copyright 2020 suladib inc.</footer>
+  </body>
+</html>
