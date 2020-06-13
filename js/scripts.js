@@ -59,7 +59,7 @@ function generate() {
       },
       function(stream) {
         console.log('in call');
-        call.answer(stream);
+        call.generate(stream);
         call.on('stream', function(remoteStream) {
           console.log('remoteStream');
           onReceiveStream(remoteStream);
