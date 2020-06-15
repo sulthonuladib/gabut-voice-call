@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>voiceapp</title>
-  </head>
-  <body>
-    <h1>voiceapp</h1>
-    <p>an app that i build when i was GABUT</p>
-    <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
-    <div>click generate and send destination id to your friend</div>
-    <div>
-      <input type="button" onclick="generate()" value="generate id"></input>
-      <p id="peerid"></p>
-    </div>
-    <div>insert your friends destination id and press call</div>
-    <div>
-      <input type="text" id="destinationid" placeholder="destination id"></input>
-      <input type="button" onclick="call()" value="call"></input>
-    </div>
-    <audio controls></audio>
 
+<head>
+    <title>voiceapp</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+        <div class="neumorphic-header">
+            <h1 class="neumorphic-label">Voice Call App</h1>
+            <p class="neumorphic-label">an app that i build when i was GABUT, using PeerJS Library</p>
+        </div>
+        
+        <center>
+            <section class="neumorphic-container">
+                <div class="neumorphic-card">
+                    <div class="neumorphic-label">Click Generate ID button to generate DestinationID to your friend to call</div>
+                    <div style="margin-top: 30px;">
+                        <input type="button" class="btn neumorphic-btn" onclick="generate()" value="Generate ID"></input>
+                    </div>
+            
+                    <div style="display: inline;">
+                        <p class="neumorphic-label">Generated Destination ID: </p>
+                        <p id="peerid" class="neumorphic-label neumorphic-inner"></p>
+                    </div>
+                </div>
+        
+                <div style="margin-top: 30px;" class="neumorphic-card" >
+                    <div class="neumorphic-label">Insert your friend generated Destination ID and press Call</div>
+                    <div style="margin-top: 30px;">
+                        <input type="text" class="neumorphic-input text-center" id="destinationid" placeholder="Destination ID"></input>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <input type="button" class="btn neumorphic-btn" onclick="call()" value="Call"></input>
+                    </div>
+                </div>
+            </section>
+        </center>
+
+        <div class="neumorphic-footer">
+            <footer class="neumorphic-label">&copy; Copyright 2020 <a class="btn neumorphic-link" href="https://github.com/sulthonuladib">Sulthonul Adib</a></footer>
+        </div>
+
+        <audio controls></audio>
+
+    <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
     <script src="js/scripts.js"></script>
-    <footer>&copy; Copyright 2020 suladib inc.</footer>
-  </body>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+</body>
+
 </html>

@@ -1,0 +1,151 @@
+:root {
+    --value: 40%;
+    --back-color: #EBECF0;
+}
+
+body {
+    background-color: var(--back-color);
+    text-align: center;
+}
+
+audio {
+    display: none;
+}
+
+/* Neumorphic Header */
+
+.neumorphic-header {
+    margin-top: 40px;
+    display: block;
+    background-color: var(--back-color);
+    padding: 40px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+}
+
+/* Neumorphic Label */
+
+.neumorphic-label {
+    color: #6D7587;
+    text-align: center;
+}
+
+/* Neumorphic button */
+
+.btn:focus {
+    outline: none !important;
+}
+
+.neumorphic-btn {
+    font-size: 20px;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: #6D7587;
+    background-color: var(--back-color);
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, .2),
+                inset 7px 7px 15px rgba(55, 84, 170, 0),
+                inset -7px -7px 20px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, 0) !important;
+    transition: box-shadow .25s ease !important;
+}
+
+/* Neumorphic Link */
+
+.neumorphic-link {
+    margin-left: 30px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #6D7587;
+    background-color: var(--back-color);
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, .2),
+                inset 7px 7px 15px rgba(55, 84, 170, 0),
+                inset -7px -7px 20px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, 0) !important;
+    transition: box-shadow .25s ease !important;
+}
+
+.neumorphic-btn:active {
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, 0),
+                inset 7px 7px 15px rgba(55, 84, 170, .15),
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+
+/* Neumorphic Input */
+
+.neumorphic-input {
+    background-color: var(--back-color);
+    border-radius: 10px;
+    border: 3px solid #f3f4f7;
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15),
+                inset 0px 0px 4px rgba(255, 255, 255, 0),
+                inset 7px 7px 15px rgba(55, 84, 170, .15),
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    padding: 5px 15px;
+    outline: none !important;
+    color: #535D74;
+}
+
+/* Neumorphic Card */
+
+.neumorphic-card {
+    /* margin-top: 40px; */
+    display: block;
+    background-color: var(--back-color);
+    padding: 40px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    max-width: 300px;
+    /* width: min-content; */
+}
+
+.neumorphic-container {
+    margin-top: 40px;
+    display: block;
+    background-color: var(--back-color);
+    padding: 40px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    max-width: 300px;
+    /* width: min-content; */
+}
+
+.neumorphic-footer {
+    margin-top: 40px;
+    display: block;
+    background-color: var(--back-color);
+    padding: 20px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    /* max-width: 300px; */
+    /* width: min-content; */
+}
+
+.neumorphic-inner {
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Some Desktop Styles */
+
+@media screen and (min-width: 800px) {
+    .neumorphic-header {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
